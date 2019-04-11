@@ -1,0 +1,9 @@
+#!/bin/bash
+x=$(date +%Y%m%d%H%M%S)
+cat /etc/passwd | awk -F : '{print $1}' > zad1$x.txt
+cat /etc/group | awk -F : '{print $1}' > zad2$x.txt
+sudo iptables -vL -t mangle  > zad3$x.txt
+sudo netstat -ltnp --numeric-port > zad4$x.txt
+ps -aux | less > zad5$x.txt
+mkdir inwentaryzacja$x
+mv *.txt inwentaryzacja$x

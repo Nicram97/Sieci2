@@ -1,0 +1,25 @@
+#!/bin/bash
+read -p "Enter your name : " name
+read -p "Enter your surname : " surname
+echo $name $surname
+letter=$(echo $name | cut -c 1)
+login=$(echo $letter$surname | tr [:upper:] [:lower:])
+echo $login
+test_login="oleszczuk"
+
+#	if [ "$login" = "$test_login" ]
+#		then
+#			echo "taki uzytkownik istnieje"
+#	else
+#			echo "zalozyles konto"
+#	fi
+
+#until [[ $(finger "${test_login}" 2>&1) =~ "no such user" ]];
+#do
+#	echo "sprobuj raz jeszcze"
+#done
+
+#while [ grep "${login}" /etc/passwd > /dev/null 2>&1 ]; 
+#do
+#	echo "try again"
+#done

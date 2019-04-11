@@ -1,0 +1,116 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  1.1  37768  5872 ?        Ss   mar07   0:47 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    mar07   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    mar07   0:07 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   mar07   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    mar07   8:31 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    mar07   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    mar07   0:00 [migration/0]
+root        10  0.0  0.0      0     0 ?        S    mar07   0:07 [watchdog/0]
+root        11  0.0  0.0      0     0 ?        S    mar07   0:00 [kdevtmpfs]
+root        12  0.0  0.0      0     0 ?        S<   mar07   0:00 [netns]
+root        13  0.0  0.0      0     0 ?        S<   mar07   0:00 [perf]
+root        14  0.0  0.0      0     0 ?        S    mar07   0:00 [khungtaskd]
+root        15  0.0  0.0      0     0 ?        S<   mar07   0:00 [writeback]
+root        16  0.0  0.0      0     0 ?        SN   mar07   0:00 [ksmd]
+root        17  0.0  0.0      0     0 ?        S<   mar07   0:00 [crypto]
+root        18  0.0  0.0      0     0 ?        S<   mar07   0:00 [kintegrityd]
+root        19  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root        20  0.0  0.0      0     0 ?        S<   mar07   0:00 [kblockd]
+root        21  0.0  0.0      0     0 ?        S<   mar07   0:00 [ata_sff]
+root        22  0.0  0.0      0     0 ?        S<   mar07   0:00 [md]
+root        23  0.0  0.0      0     0 ?        S<   mar07   0:00 [devfreq_wq]
+root        26  0.0  0.0      0     0 ?        S    mar07   0:00 [kswapd0]
+root        27  0.0  0.0      0     0 ?        S<   mar07   0:00 [vmstat]
+root        28  0.0  0.0      0     0 ?        S    mar07   0:00 [fsnotify_mark]
+root        29  0.0  0.0      0     0 ?        S    mar07   0:00 [ecryptfs-kthrea]
+root        45  0.0  0.0      0     0 ?        S<   mar07   0:00 [kthrotld]
+root        46  0.0  0.0      0     0 ?        S<   mar07   0:00 [acpi_thermal_pm]
+root        47  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root        48  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root        49  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root        50  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root        51  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root        52  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root        53  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root        54  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root        55  0.0  0.0      0     0 ?        S    mar07   0:00 [scsi_eh_0]
+root        56  0.0  0.0      0     0 ?        S<   mar07   0:00 [scsi_tmf_0]
+root        57  0.0  0.0      0     0 ?        S    mar07   0:00 [scsi_eh_1]
+root        58  0.0  0.0      0     0 ?        S<   mar07   0:00 [scsi_tmf_1]
+root        63  0.0  0.0      0     0 ?        S<   mar07   0:00 [ipv6_addrconf]
+root        76  0.0  0.0      0     0 ?        S<   mar07   0:00 [deferwq]
+root        77  0.0  0.0      0     0 ?        S<   mar07   0:00 [charger_manager]
+root        78  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       127  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       128  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       129  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       130  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       131  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       132  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       133  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       134  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       136  0.0  0.0      0     0 ?        S<   mar07   0:02 [kworker/0:1H]
+root       137  0.0  0.0      0     0 ?        S<   mar07   0:00 [mpt_poll_0]
+root       138  0.0  0.0      0     0 ?        S<   mar07   0:00 [mpt/0]
+root       139  0.0  0.0      0     0 ?        S<   mar07   0:00 [kpsmoused]
+root       140  0.0  0.0      0     0 ?        S<   mar07   0:00 [ttm_swap]
+root       149  0.0  0.0      0     0 ?        S    mar07   0:00 [scsi_eh_2]
+root       150  0.0  0.0      0     0 ?        S<   mar07   0:00 [scsi_tmf_2]
+root       151  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       152  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       153  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       230  0.0  0.0      0     0 ?        S<   mar07   0:00 [raid5wq]
+root       254  0.0  0.0      0     0 ?        S<   mar07   0:00 [bioset]
+root       281  0.0  0.0      0     0 ?        S    mar07   0:00 [jbd2/sda1-8]
+root       282  0.0  0.0      0     0 ?        S<   mar07   0:00 [ext4-rsv-conver]
+root       342  0.0  0.5  27704  2800 ?        Ss   mar07   0:03 /lib/systemd/systemd-journald
+root       356  0.0  0.0      0     0 ?        S<   mar07   0:00 [iscsi_eh]
+root       357  0.0  0.0      0     0 ?        S    mar07   0:00 [kauditd]
+root       370  0.0  0.0      0     0 ?        S<   mar07   0:00 [ib_addr]
+root       373  0.0  0.2  94772  1320 ?        Ss   mar07   0:00 /sbin/lvmetad -f
+root       382  0.0  0.0      0     0 ?        S<   mar07   0:00 [ib_mcast]
+root       383  0.0  0.0      0     0 ?        S<   mar07   0:00 [ib_nl_sa_wq]
+root       385  0.0  0.0      0     0 ?        S<   mar07   0:00 [ib_cm]
+root       386  0.0  0.0      0     0 ?        S<   mar07   0:00 [iw_cm_wq]
+root       387  0.0  0.0      0     0 ?        S<   mar07   0:00 [rdma_cm]
+root       390  0.0  0.6  44400  3456 ?        Ss   mar07   0:02 /lib/systemd/systemd-udevd
+root       434  0.1  1.5 191544  7816 ?        Ssl  mar07  20:16 /usr/bin/vmtoolsd
+systemd+   499  0.0  0.5 100324  2496 ?        Ssl  mar07   3:42 /lib/systemd/systemd-timesyncd
+root       832  0.0  1.2 277268  6020 ?        Ssl  mar07   0:31 /usr/lib/accountsservice/accounts-daemon
+root       840  0.0  0.6  28656  3008 ?        Ss   mar07   0:02 /lib/systemd/systemd-logind
+root       845  0.0  1.6  85436  8056 ?        Ss   mar07   0:00 /usr/bin/VGAuthService
+root       851  0.0  0.6 637104  3240 ?        Ssl  mar07   0:11 /usr/bin/lxcfs /var/lib/lxcfs/
+syslog     854  0.0  0.6 256392  3352 ?        Ssl  mar07   0:00 /usr/sbin/rsyslogd -n
+message+   858  0.0  0.7  42892  3588 ?        Ss   mar07   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+root       877  0.0  2.8 151212 14380 ?        Ssl  mar07   1:06 /usr/lib/snapd/snapd
+root       884  0.0  0.5  30228  2916 ?        Ss   mar07   0:03 /usr/sbin/cron -f
+root       888  0.0  0.2   4396  1348 ?        Ss   mar07   0:00 /usr/sbin/acpid
+daemon     889  0.0  0.4  26044  2016 ?        Ss   mar07   0:00 /usr/sbin/atd -f
+root       903  0.0  1.0 277088  5080 ?        Ssl  mar07   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root       923  0.0  0.0  13372   156 ?        Ss   mar07   0:00 /sbin/mdadm --monitor --pid-file /run/mdadm/monitor.pid --daemonise --scan --syslog
+root       998  0.0  1.2  65508  6072 ?        Ss   mar07   0:00 /usr/sbin/sshd -D
+root      1126  0.0  0.0   5220   152 ?        Ss   mar07   0:55 /sbin/iscsid
+root      1127  0.0  0.7   5720  3516 ?        S<Ls mar07   3:45 /sbin/iscsid
+root      1173  0.0  0.3  17156  1660 tty1     Ss+  mar07   0:00 /sbin/agetty --noclear tty1 linux
+root     20010  0.0  0.0      0     0 ?        S    13:03   0:01 [kworker/0:4]
+root     20263  0.0  0.0      0     0 ?        S    14:01   0:00 [kworker/0:0]
+root     20267  0.0  1.3  92828  6596 ?        Ss   14:04   0:00 sshd: oleszczuk [priv]
+oleszcz+ 20269  0.0  0.9  45276  4720 ?        Ss   14:04   0:00 /lib/systemd/systemd --user
+oleszcz+ 20275  0.0  0.3  61220  1920 ?        S    14:04   0:00 (sd-pam)
+oleszcz+ 20327  0.0  0.6  92828  3472 ?        S    14:04   0:00 sshd: oleszczuk@pts/0
+oleszcz+ 20328  0.0  1.1  24084  5564 pts/0    Ss+  14:04   0:00 -bash
+root     20460  0.0  0.0      0     0 ?        S    14:32   0:00 [kworker/u30:0]
+root     20502  0.0  1.3  92828  6636 ?        Ss   14:40   0:00 sshd: oleszczuk [priv]
+oleszcz+ 20533  0.0  0.6  92828  3476 ?        S    14:40   0:00 sshd: oleszczuk@pts/1
+oleszcz+ 20534  0.0  1.0  24036  5440 pts/1    Ss   14:40   0:00 -bash
+root     20549  0.0  1.3  92828  6644 ?        Ss   14:40   0:00 sshd: patkowalski [priv]
+patkowa+ 20551  0.0  0.9  45276  4652 ?        Ss   14:40   0:00 /lib/systemd/systemd --user
+patkowa+ 20557  0.0  0.3  61220  1920 ?        S    14:40   0:00 (sd-pam)
+patkowa+ 20587  0.0  0.7  92828  3520 ?        S    14:40   0:00 sshd: patkowalski@pts/2
+patkowa+ 20588  0.0  1.0  23968  5272 pts/2    Ss+  14:40   0:00 -bash
+root     20603  0.0  0.0      0     0 ?        S    14:41   0:00 [kworker/u30:1]
+root     20613  0.3  0.8  54232  4072 pts/1    S+   14:48   0:00 sudo ./lab1_1
+root     20614  0.0  0.6  13740  3012 pts/1    S+   14:48   0:00 /bin/bash ./lab1_1
+root     20624  0.0  0.6  38672  3416 pts/1    R+   14:48   0:00 ps -aux
+root     20625  0.0  0.1  10876   836 pts/1    S+   14:48   0:00 less

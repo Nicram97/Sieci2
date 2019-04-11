@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+ROOT_UID=0
+SUCCESS=0
+E_USEREXISTS=70
+
+# Run as root, of course. (this might not be necessary, because we have to run the script somehow with root anyway)
+if [ "$UID" -ne "$ROOT_UID" ]
+then
+  echo "Must be root to run this script."
+  exit $E_NOTROOT
+fi
+
+#test, if both argument are there
+if [ $# -eq 2 ]; then
+    username=$(echo $1 | tr [:upper:] [:lower:])
+    surname=$(echo $2 | tr [:upper:] [:lower:])
+    pass=1234
+    sufix_needed=0
+    login=""
+    prefix=""
+
+username=$(echo $username | sed -e 'y/ĄąĆćĘęŁłŃńÓóŚśŹźŻż/AaCcEeLlNnOoSsZzZz/')
+echo $username
+
+    for (( i=0; i<${#username}; i++ )); do
+        prefix+="${username:$i:1}"
+        login="$prefix$surname"
+
+        # Check if user already exists.
+        grep -q "$login" /etc/passwd
+        if [ $? -eq $SUCCESS ]
+        then
+            echo "User $login does already exist."
+            sufix_needed=1
+        else
+            sufix_needed=0
+            break
+        fi
+    done
+
+    if [[ sufix_needed -eq 1 ]]
+    then
+        for (( i=0; i<10; i++ )); do
+            sufix="$i"
+            temp_login="$login$sufix"
+            # Check if user already exists.
+            grep -q "$temp_login" /etc/passwd
+            if [ $? -eq $SUCCESS ]
+            then
+                echo "Siema $temp_login does already exist."
+            else
+                login="$temp_login"
+                echo "$login"
+                break
+            fi
+        done
+    fi
+
+	useradd -d /home/"$login" -m -g users -s /bin/bash "$login"
+	echo "${login}:$pass" | chpasswd
+	chage -d 0 "$login"
+
+    echo "alias ll='ls -al'" >> /home/"$login"/.bashrc
+    echo "alias zdanko='apt-get moo'" >> /home/"$login"/.bashrc
+    mkdir -p /home/"$login"/public_html/private_html
+    echo "echo \"All Hail the Flying Spaghetti Monster!\"" >> /home/"$login"/.bashrc
+    echo "lastlog -u $login" >> /home/"$login"/.bashrc
+    echo "PS1='[\A][\u@\h][\w] $ '" >> /home/"$login"/.bashrc
+    cat <<'EOT' > /home/"$login"/public_html/private_html/.htaccess
+AuthType Basic
+AuthName "Login"
+AuthBasicProvider external
+AuthExternal pwauth
+Require user "@login"
+EOT
+sed -i "s/@login/$login/" /home/"$login"/public_html/private_html/.htaccess
+	echo "the account is setup"
+	#eneble every new user his own web 192.168.200.103/username -> a2enmod
+
+else
+        echo  " this programm needs 3 arguments you have given $# "
+        echo  " you have to call the script $0 username ,surname, the pass "
+fi
+
+exit 0
