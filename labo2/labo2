@@ -58,7 +58,11 @@ echo $username
 
 	useradd -d /home/"$login" -m -g users -s /bin/bash "$login"
 	echo "${login}:$pass" | chpasswd
+        echo -ne "$pass\n$pass\n" | smbpasswd -a -s $login #konto w bazie samby -> nastepne wymuszenie zmiany hasla samby
+        net sam set pwdmustchangenow "$login" yes 
 	chage -d 0 "$login"
+	#Brak mozliwosci synchronizacji zmiany hasel po logowaniu -> usunieto biblioteke libpam-smbpass (trzeba robic po ssh :( )
+
 
     echo "alias ll='ls -al'" >> /home/"$login"/.bashrc
     echo "alias zdanko='apt-get moo'" >> /home/"$login"/.bashrc
@@ -74,6 +78,7 @@ AuthExternal pwauth
 Require user "@login"
 EOT
 sed -i "s/@login/$login/" /home/"$login"/public_html/private_html/.htaccess
+    chown -R "$login":users /home/"$login"
 	echo "the account is setup"
 	#eneble every new user his own web 192.168.200.103/username -> a2enmod
 
